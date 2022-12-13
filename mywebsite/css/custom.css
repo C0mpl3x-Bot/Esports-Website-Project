@@ -1,0 +1,514 @@
+/*used from group project code was adapted*/
+/* Global Styles */
+* {
+ box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(47,79,79,1);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,1);
+  width: 75%;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.form-group{
+  margin: 1rem;
+}
+
+
+/* Header Styles */
+h1, h2, h3, h4, h5, h6{
+  font-weight: 100;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+
+/*images*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+    }
+
+/*ID styles*/
+#header-img {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Utility Classes */
+.mar2 {
+  margin: 2rem;
+}
+.mar1 {
+  margin: 0.5rem;
+}
+.mar0 {
+  margin: 0.35rem;
+}
+.centred {
+  text-align: center;
+}
+
+/*Form Styles*/
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgba(204, 204, 204, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(69, 160, 73, 1);
+}
+
+/* Element Styles */
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 2rem;
+  float: none;
+}
+main {
+ margin-left: 2rem;
+ margin-right: 2rem;
+}
+
+button {
+  width: 100%;
+  background-color: rgba(90,90,90,1);
+  color: white;
+  padding: 30px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*footer styling*/
+
+footer{
+  background-color: rgba(16, 16, 16, 0.9);
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgba(230,230,250, 1);
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+footer a {
+ display: block;
+ display: flex;
+ padding: 8px;
+ color: rgba(230,230,250, 1);
+}
+footer a:visited {
+  color: rgba(230,230,250, 1);
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li a:hover {
+  background-color: rgba(0,0,0, 1);
+  color: white;
+}
+
+.footer-links {
+  grid-column: 1;
+  text-align: left;
+  float: left;
+}
+.footer-text {
+  grid-column: 2;
+  text-align: center;
+  float: none;
+}
+.footer-right {
+  grid-column: 3;
+  text-align: right;
+  float: right;
+}
+
+footer{
+    font-size: 0.8rem;
+}
+
+/*media queries*/
+@media (max-width:1000px){
+    body,icon-bar{
+        width:90%
+    }
+}
+
+
+
+
+/*mine that i learnt during lab */
+h2{
+    text-align: center;
+}
+
+
+h1:hover {
+ animation-name: colorShift;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+}
+@keyframes colorShift {
+ 10% {
+ color: red;
+ }
+    20% {
+        color: chartreuse;
+    }
+        30% {
+        color: yellow;
+    }
+        40% {
+        color: magenta;
+    }
+        50% {
+        color: olive;
+    }
+        60% {
+        color: green;
+    }
+        70% {
+        color: aqua;
+    }
+        80% {
+        color: indianred;
+    }
+        90% {
+        color: firebrick;
+    }
+        100% {
+        color: lavender;
+    }
+}
+
+h2:hover {
+ animation-name: colorShift;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+}
+@keyframes colorShift {
+ 10% {
+ color: red;
+ }
+    20% {
+        color: chartreuse;
+    }
+        30% {
+        color: yellow;
+    }
+        40% {
+        color: magenta;
+    }
+        50% {
+        color: olive;
+    }
+        60% {
+        color: green;
+    }
+        70% {
+        color: aqua;
+    }
+        80% {
+        color: indianred;
+    }
+        90% {
+        color: firebrick;
+    }
+        100% {
+        color: lavender;
+    }
+}
+
+
+/*css is from w3schools https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp css was adpated so the icons are smaller and different icons are used some of the code was adapted. No author found. No Date found.*/
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.reddit{
+  background: #FF4500;
+  color: white;
+}
+
+.content {
+  margin-left: -75px;
+  font-size: 30px;
+}
+
+/*css is from w3schools https://www.w3schools.com/howto/howto_js_accordion.asp css was adapted so it the boxes dont require you to scroll for information and colors were changed some other code was also adapted so it works well.No author found.No date found.*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgba(128,128,128,1);
+  color: rgba(255,255,255,1);
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+  background-color: rgba(0,0,0,1);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding:5px;
+  width:100%;
+  background-color: rgb(255,255,255,1);
+  display: none;
+  overflow: hidden;
+}
+
+
+/*css is from https://codepen.io/sonofchella/pen/JbyNLK css was adapted so table is streched and some of the colours were changed as well.Author is Dhivakar Chelladurai. Date created on was November 26, 2016*/
+/*standings table column*/
+.headin{
+    text-align:center;
+    color: rgba(255,255,255,1);
+    margin: 30px;
+    display: block;
+}
+
+.ptable table{
+	margin: auto auto;
+	border-collapse: collapse;
+}
+
+.ptable{
+	margin: 0px 0% 5px 0%;
+}
+
+td {
+    padding: 5px;
+}
+
+td {
+        width:25%;
+}
+
+td{
+	background-color: black;
+	color: #ffe221;
+}
+
+.row{
+	text-align: left;
+}
+
+.row td{
+	color: #77ff21;
+}
+
+.wpos{
+    text-align: left;
+}
+
+.wpos td{
+    color:rgba(46,139,87,1);
+}
+
+
+table .col{
+	border-bottom: 1px solid #FFFFFF;
+    background-color: aqua;
+    text-align: left;
+}
+
+.wpos:hover td{
+	background-color: #77ff21;
+}
+
+.pos:hover td{
+	background-color: #ff7b21;
+}
+
+/*css is from https://www.w3schools.com/css/css_navbar.asp had to be adapted to work with the html code and some colouring was changed.No author found.No date found*/
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: rgba(230,230,250, 1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav li a:hover {
+  background-color: #111;
+}
+
+/*slideshow css from https://www.w3schools.com/howto/howto_js_slideshow.asp code was slightly adapted.No author found. No date was found */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: center;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
